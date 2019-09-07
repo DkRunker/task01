@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './text.dart';
+
 void main() => runApp(Task01());
 
 class Task01 extends StatefulWidget {
@@ -53,14 +55,7 @@ class _Task01State extends State<Task01> {
         ),
         body: Column(
           children: [
-            Container(
-              child: Center(
-                child: Text(
-                  frases[contador],
-                  style: TextStyle(fontSize: 30),
-                ),
-              ),
-            ),
+            Texto(frases,contador),
             RaisedButton(
               child: Text(
                 'Cambia el texto', 
